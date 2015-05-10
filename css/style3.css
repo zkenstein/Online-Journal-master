@@ -1,0 +1,511 @@
+body {
+    background: white;
+    text-align: center;
+    margin: 0px;
+}
+ 
+#header {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 135px;
+    background: whitesmoke;
+    position: relative;
+    border-bottom: white;
+    color: rgb(116, 116, 116);
+}
+
+#header h1{
+font-family: monospace;
+
+font: full pack 2025;
+position: relative;
+top: 30px;
+font-size: 40px;
+color: rgb(100, 97, 97);
+}
+div#del {
+position: relative;
+top: -26;
+background: #CC0066;
+left: 20;
+width: 158;
+height: 59;
+}
+#header h2{
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+font-size: 16px;
+color: #7e7e7e;
+}
+
+hr#header_stripe{
+height: 8px;
+position: relative;
+top: -7px;
+background-color: #CC0066;
+border: none;
+color: #191919;
+ 
+}
+
+#header_stripe_bottom {
+height: 39px;
+position: fixed;
+bottom: -23px;
+width: 100%;
+background-color: #CC0066;
+border: none;
+color: white;
+z-index: 400;
+}
+
+#footer {
+font-family: monospace;
+font-size: larger;
+position: fixed;
+bottom: 3px;
+left: 404px;
+color: white;
+z-index: 500;
+}
+
+a:-webkit-any-link {
+color: white;
+text-decoration: blink;
+cursor: auto;
+}
+#wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    text-align: center;
+}
+#toppanel {
+    position: absolute;
+    top: 135px;
+    width: 900px;
+    z-index: 25;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sign_up > input[type="Button"] {
+position: relative;
+top: -3;
+}
+
+#panel {
+    width: 900px;
+    position: relative;
+    top: 1px;
+    height: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+    overflow: hidden;
+    text-align: left;
+}
+#panel_contents {
+    background: #CC0066;
+    border-bottom-left-radius: 10;
+    border-bottom-right-radius: 10;
+    filter:alpha(opacity=100);
+    -moz-opacity:1;
+    -khtml-opacity: 1;
+    opacity: 1;
+    height: 100%;
+    width: 904px;
+    position: absolute;
+    z-index: -1;
+}
+
+.border {
+    border: 15px #1d1d1d solid;
+}
+ 
+img.border_pic {
+    border: 15px #FFFFFF solid;
+    border-radius: 5px;
+    position: absolute;
+    top: 84px;
+    float: left;
+    margin-left: 150px;
+    width: 250px;
+    height: 150px;
+    background: white;
+    z-index: 30;
+}
+div#login {
+    width: 240px;
+    height: 150px;
+    position: absolute;
+    right: 150px;
+    top: 84;
+    background: #FFFFFF;
+    text-align: left;
+    padding-left: 10px;
+    border: 15px #FFFFFF solid;  border-radius: 5px;
+    /* padding-top: 20px; */
+}
+div#login p {
+    color: #000000;
+    font-family: monospace;
+    line-height: 25px;
+}
+div#login input#password {
+    position: relative;
+    /* right: -6px; */
+}
+div#login input#login_btn {
+    /* border: 1px #899690 solid; */
+    cursor: pointer;
+    position: absolute;
+    top: 100;
+    left: 74;
+	border: none;
+}
+
+#remember {
+position: absolute;
+left: 40;
+}
+
+#sign_up {
+position: relative;
+left: 66%;
+top: -2%;
+}
+
+#OK > input[type="submit"] {
+position: relative;
+left: 168;
+top: -25;
+}
+
+#Redirect {
+color: rgb(10, 0, 255);
+text-decoration: underline;
+font-family: inherit;
+position: relative;
+left: 1;
+top: -48;
+}
+
+#content > hr {
+position: relative;
+top: -9;
+}
+
+#form2 > p:nth-child(4) {
+position: relative;
+left: 0;
+top: -23;
+}
+
+#form2 > p:nth-child(1) {
+position: relative;
+left: 32;
+top: 12;
+}
+
+#form2 > p:nth-child(3) {
+position: relative;
+left: 23;
+top: -11;
+}
+
+#login > div:nth-child(3) > label {
+font-family: monospace;
+position: absolute;
+left: 105;
+top: 78;
+}
+.panel_button {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 1px;
+    width: 173px;
+    height: 54px;
+    background: white;
+    z-index: 20;
+    filter:alpha(opacity=70);
+    -moz-opacity:0.70;
+    -khtml-opacity: 0.70;
+    opacity: 0.70;
+    cursor: pointer;
+}
+.panel_button a {
+    text-decoration: none;
+    color: #545454;
+    font-size: 22;
+    font-weight: bold;
+    
+    position: relative;
+    top: 15px;
+    left: 8px;
+    font-family: Arial;
+    font-kerning: inherit;
+    font-style: initial;
+    color: black;
+}
+.panel_button a:hover {
+color: #999999;
+}
+
+#login > div > label {
+position: absolute;
+top: 78;
+font-family: monospace;
+left: 105;
+}
+
+.panel_button img{
+position: relative;   
+top: 20px;
+border: none;
+padding-left: 1;
+}
+
+#content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    position: relative;
+    top: 90px;
+    text-align: left;
+    color: #545454;
+    font-family: keep calm;
+    font-size: 15;
+    padding-bottom: 30px;
+    padding-left: 45px;
+    text-align: center;
+}
+
+#cke_editor1 {
+position: relative;
+width: 948;
+left: 384;
+top: -167;
+z-index: 89;
+}
+
+body > form > input[type="submit"] {
+position: relative;
+top: -177;
+left: 625;
+}
+
+#text {
+position: relative;
+left: -120;
+top: -163;
+}
+
+#datasubmit {
+position: relative;
+left: 508;
+top: -324;
+}
+
+#welcome {
+/* border: 2px; */
+font-family: initial;
+position: relative;
+top: 16;
+left: -577;
+font-size: 19px;
+color: blueviolet;
+/* text-shadow: 2px 2px #DDDDDC; */
+}
+
+#logout_button {
+position: relative;
+top: -958;
+left: 1168;
+width: 177;
+/* background: #CC0066; */
+}
+
+
+div#title {
+position: relative;
+top: -312px;
+width: 273;
+left: 570;
+}
+div#previous_entry {
+position: relative;
+top: -53;
+text-align: left;
+left: 400;
+border: #CC0066;
+border-top-width: 55;
+background-color: #CC0066;
+color: white;
+padding: 40;
+font-family: monospace;
+font-size: 22;
+}
+div#text2 {
+position: relative;
+left: 33;
+top: -355;
+}
+
+div#browse {
+z-index: 500;
+background-color: #CC0066;
+position: relative;
+top: -165;
+left: 20;
+width: 158;
+color: white;
+}
+div#previous_entry {
+position: relative;
+top: -53;
+text-align: left;
+left: 400;
+border: #CC0066;
+border-top-width: 55;
+background-color: #CC0066;
+color: white;
+padding: 40;
+width: 863;
+}
+
+div#back {
+position: relative;
+left: 1221;
+top: -55;
+width: 120;
+}
+
+div#previous {
+position: relative;
+background-color: #CC0066;
+color: white;
+top: 3;
+height: 56;
+width: 137;
+left: 40;
+text-align: center;
+border-radius: 10;
+padding-top: 16;
+font-family: monospace;
+font-size: 19;
+}
+
+hr#header_stripe_1 {
+height: 8px;
+position: relative;
+top: -15px;
+background-color: #CC0066;
+border: none;
+color: #191919;
+}
+
+#delete_button {
+position: relative;
+left: 778;
+top: -32;
+border-style: solid;
+border-width: 2px;
+padding-left: 14;
+width: 95;
+}
+
+#cke_editor2edit {
+position: relative;
+width: 948;
+left: 234;
+top: 2;
+z-index: 89;
+}
+
+#dataupdate {
+position: relative;
+top: -342;
+width: 69;
+left: 1147;
+}
+div#del {
+position: relative;
+top: -71;
+background: #CC0066;
+left: 20;
+width: 204;
+height: 79;
+}
+div#pic {
+background-color: #CC0066;
+position: relative;
+top: 21;
+left: 20;
+height: 162;
+width: 153;
+padding-top:9;
+}
+div#profile_div {
+position: relative;
+top: 83;
+text-align: left;
+left: 463;
+background-color: #CC0066;
+width: 337;
+padding-left: 125;
+color: white;
+font-family: monospace;
+font-size: 20;
+padding-top: 25;
+height:223;
+}
+#az {
+width: 952;
+position: relative;
+left: 3%;
+top: -279;
+}
+input#profile_ok {
+position: relative;
+left: 220;
+top : 5;
+}
+
+div#color_picker {
+position: relative;
+/* background-color: brown; */
+top: -577;
+width: 160;
+height: 43;
+left: 18;
+border: solid 1px;
+}
+div#orange {
+position: relative;
+background-color: orange;
+width: 38;
+height: 38;
+top: 2;
+left: 12;
+}
+
+div#pink {
+position: relative;
+background-color: #CC0066;
+width: 38;
+height: 38;
+top: -36;
+left: 62;
+}
+div#blue {
+position: relative;
+background-color: blue;
+width: 38;
+height: 38;
+top: -74;
+left: 111;
+}

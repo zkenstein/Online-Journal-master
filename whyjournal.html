@@ -1,0 +1,230 @@
+<head>
+<title>eJournal</title>
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<script type="text/javascript" src="js/form.js"></script>
+<style type="text/css">
+@import url(css/style.css);
+@import url(css/validator.css);
+</style>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script>
+	$(document).ready(function(){	$("#header").fadeIn();
+									$("#wrapper").fadeIn("slow");
+									$("#content").fadeIn(700);
+									$("#footer").fadeIn(300);
+									$("#header_stripe_bottom").fadeIn(500);
+									$("#header_stripe").fadeIn(500);
+								});
+								
+</script>
+<script>
+		$(document).ready(function() {
+    $("div.panel_button").click(
+
+        function(){ $("div#panel").animate({ height: "360px" }) .animate({
+        height: "350px" }, "fast"); $("div.panel_button").toggle();
+            }); $("div#hide_button").click(function(){
+        $("div#panel").animate({
+            height: "0px"
+ 
+        }, "slow"); 
+      });       
+});
+
+</script>
+<script>
+		$(document).ready(function() {
+    $("div#sign_up").click(
+
+        function(){ $("div#panel").animate({ height: "420px" }) .animate({
+        height: "400px" }, "fast"); 
+            }); $("div#hide_button").click(function(){  $("div#panel").animate({  height: "0px"}, "slow"); 
+      });       
+});</script>
+<script>
+$(document).ready(function(){
+  $("#sign_up").click(function(){
+    $(".border").animate({
+      height:'250px',
+    });
+	
+  });
+});
+</script>
+<script>
+$(document).ready(function(){ $("#sign_up").click(function(){$("#OK").show(),$("#form1").hide(),$("#sign_up").hide(),$("#stay").hide(),$("#remember").hide(),$("#form2").show()}); });
+</script>
+
+<script>
+$(document).ready(function(){  $("input").focus(function(){    $(this).css("background-color","#cccccc");  }); 
+							   $("input").blur (function(){    $(this).css("background-color","#ffffff");  });
+							});
+</script>
+<!--<SCRIPT>
+		function validate(form) {
+		var e = form.elements;
+
+		/* Your validation code. */
+
+		if(e['password'].value != e['confirm'].value) {	alert('Your passwords do not match. Please type more carefully.'); return false;} return true;}
+		
+		
+
+</SCRIPT>
+
+
+-->
+
+   <script>(function() {with (this[2]) {with (this[1]) {with (this[0]) {return function(event) {return validate('customValidatorGroupName');
+};}}}})</script>
+</head>
+
+<div id="header" style="display:none;">
+	<!-- Start WOWSlider.com BODY section -->
+	<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+<li><img src="data1/images/lg1__copy.jpg" alt="" title="" id="wows1_0"/></li>
+<li><img src="data1/images/lg1.jpg" alt="" title="" id="wows1_1"/></li>
+</ul></div>
+<div class="ws_bullets"><div>
+<a href="#" title=""><img src="data1/tooltips/lg1__copy.jpg" alt=""/>1</a>
+<a href="#" title=""><img src="data1/tooltips/lg1.jpg" alt=""/>2</a>
+</div></div>
+<span class="wsl"><a href="http://wowslider.com">Website Slideshow Maker</a> by WOWSlider.com v4.7</span>
+	<div class="ws_shadow"></div>
+	</div>
+	<script type="text/javascript" src="engine1/wowslider.js"></script>
+	<script type="text/javascript" src="engine1/script.js"></script>
+	<!-- End WOWSlider.com BODY section -->
+</div>
+ 
+<hr id="header_stripe" style="display:none;"/>
+
+<hr id="header_stripe_bottom" style="display:none;"/>
+ 
+<div id="wrapper" style="display:none; ">
+  <div id="toppanel">
+ 
+    <div id="panel">
+      <div id="panel_contents"> 
+				<img class="border_pic" src="img/me.jpg" width="300px"/>
+		<div class="border" id="login">
+			<form action = "login.php" method="post" id="form1" autocomplete="on">
+			<p>Username:
+			<input type="text" size="15" name="username" id="username" />
+		 
+			<br />
+			Password:
+			<input type="password" size="15" name="password" id="password" />
+			<div id="remember">
+				<input id="remember" value="1" type="checkbox" name="zrememberme">
+			</div>
+			
+			<br />
+			<input type="image" src="img/lg.png" width="100px" accesskey="l" id="login_btn" name="login" value="Login" alt="Submit">
+			</form>
+			<div id="stay">
+				<label for="remember">Stay signed in</label>
+			</div>
+			<div id="sign_up"><input type="Button" value="Sign up">
+			</div>
+			<form  action="signup.php" method="post" id="form2" style="display:none" autocomplete="on"> <!--onsubmit="return validate(this)"-->
+			<p>Name:
+			<input type="text" size="15"  name="name" />
+		 
+			<br />
+			<p>Username:
+			<input type="text" size="15"  name="username" validate="customValidatorGroupName" require="Please enter your desired username." />
+		 
+			<br />
+			Password:
+			<input id="pass" type="password" size="15"  name="password" validate="customValidatorGroupName" require="Please enter your desired password." regular="Invalid password, the password must be 6 characters or longer." validExpress=".{6,}" />
+			
+			Confirm:&nbsp;
+			<input type="password" size="15"  name="confirm" validate="customValidatorGroupName" require="Please confirm your password." compare="Password mismatch, the password and confirm password fields must match." compareTo="pass" />
+			<p>Email:
+			<input type="text" size="15"  name="email" validate="customValidatorGroupName" require="Please enter your email address." email="Invalid email address, please check for typos." />
+			<p>Phone No:
+			<input type="text" size="15"  name="phoneno" />
+		 
+			<br />
+			<div id="OK" style="display: none;"><input type="submit" value="OK" alt="Submit" onclick="return validate('customValidatorGroupName');">
+			</div>
+			<a id="Redirect" href="index.html">Already have an account?</a>
+			</form>
+					
+			
+
+
+					
+			<br />
+			<!--<div id="remember">
+				<input id="remember" value="1" type="checkbox" name="zrememberme">
+			</div>
+			
+			<br />
+			<input type="image" src="img/lg.png" width="100px" accesskey="l" id="login_btn" name="login" value="Login" alt="Submit">
+			</form>
+			-->
+			
+		  </p>
+		</div>
+	  </div>
+    </div>
+    <div class="panel_button" style="display:visible;"><img src="img/login_button_in.png" width = "25px"  alt="expand"/>
+  <a href="#">Login Here</a>
+ 
+  </div>
+<div class="panel_button" id="hide_button" style="display: none;"><img src="img/login_button_out.png" width = "25px"  alt="expand"/>
+ 
+  <a href="#">Hide</a>
+  </div>
+</div>
+</div>
+<div id="content" style="display:none;">
+<p><h2>Why journal?</h2></p>
+<hr>
+<div id="why-bac"></div>
+<div id="goodforyou" style="width:500;">
+<h3>Good for You</h3>
+<strong>Less</strong> Stress  Expressive writing is an extremely cathartic process, helping you to relax and release stress.<br><br> 
+<strong>Be Healthier</strong>  Numerous studies have shown that keeping a journal can improve your immune function. <br><br>
+<strong>Get Smarter</strong>  Keeping a journal or diary can not only boost your "working memory" but your grades too.<br><br>
+<strong>Lose Weight</strong>  Keeping a food diary has been suggested to double weight-loss when combined with a diet.<br><br>
+</div>
+<div id="typesofjournal" style="width:500;">
+<h3>Types of Journals</h3>
+<i>"Keep a diary, and someday it'll keep you"
+- Mae West</i>
+<br><strong>Daily Diary</strong>  Keeping a daily diary with eJournal couldn't be easier. Write at any time from anywhere.<br><br>
+<strong>Expressive Journal</strong>  Since eJournal is totally private, you can write whatever you want and truly express your feelings!<br><br>
+<strong>Travel Journal  Going away?</strong> Record your experience with eJournal! Insert photos, send entries to friends, add tags, and more!<br><br>
+</div>
+<div id="whyejournal" style="width:500;">
+<h3>Why eJournal?</h3>
+<strong>Never Lost or Stolen</strong>  While a computer, or a paper-bound diary can be lost or stolen, your entries are always safe with eJournal.<br><br>
+<strong>Access Anywhere</strong>  Ever forget your diary at home? Wherever you have internet, you have eJournal!<br><br>
+<strong>Privacy First</strong>  Not only are your entries private, but you can password protect them individually for even more privacy.<br><br>
+<strong>Easy to Use</strong>  With a simple design and paper-like interface, eJournal is extremely intuitive and easy to use.<br><br>
+</div>
+<div id="beinspired" style="width:500;">
+<h3>Be Inspired</h3>
+<i>"In Hollywood, when people die they
+don't say, 'Did he leave a will?'
+but 'Did he leave a diary?'"
+- Liza Minnelli</i>
+<br>
+<strong>Kurt Cobain</strong> Legendary Nirvana front-man, who kept a personal journal from 1980 until his suicide in 1994.<br><br>
+<strong>Anne Frank</strong> Kept her now famous diary while hiding during the Nazi occupation of The Netherlands.<br><br>
+<strong>Andy Warhol</strong> American pop-art icon religiously kept a diary about his life and conversations with friends.<br><br>
+</div>
+</div>
+
+<div id="footer" style="display:none;">
+<a href="about1.html">About</a> &nbsp;&nbsp;&nbsp;
+<a href="whyjournal.html">Why eJournal</a>&nbsp;&nbsp;&nbsp;
+<a href="queries.html">Queries</a>&nbsp;&nbsp;&nbsp;
+<a href="privacy and terms.html">Privacy & Terms</a>&nbsp;&nbsp;&nbsp;
+</div>
